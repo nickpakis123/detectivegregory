@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detective Gregory 🕵️🐕</title>
+    <meta name="description" content="The official home of Detective Gregory - solving mysteries one treat at a time!">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+
+<body>
+    <!-- Floating Paw Prints Background -->
+    <div class="paw-container" id="pawContainer"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🕵️ Official Family App</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Detective</span><br>
+                <span class="gradient-text">Gregory</span>
+            </h1>
+            <p class="hero-subtitle">Solving mysteries one treat at a time</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="treatCounter">1,247</span>
+                    <span class="stat-label">Cases Solved</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="napCounter">5</span>
+                    <span class="stat-label">Naps Today</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Cuteness Level</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="hero-image-glow"></div>
+            <div class="hero-image" id="heroImage">
+                <img src="avatars/detective_gregory_hero_1768759782347.png" alt="Detective Gregory">
+            </div>
+        </div>
+    </header>
+
+    <!-- Photo Gallery Section -->
+    <section class="section gallery-section">
+        <h2 class="section-title">📸 Gregory's Case Files</h2>
+        <p class="section-subtitle">Evidence from Gregory's daily investigations</p>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_01.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_02.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_03.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_04.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_05.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_06.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_07.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_08.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_09.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_10.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_11.jpg" alt="Gregory">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/jpg/gregory_12.jpg" alt="Gregory">
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-primary" id="googlePhotosBtn">
+            <span>📱</span> View Full Album on Google Photos
+        </a>
+    </section>
+
+    <!-- The Dynamic Duo (Gregory & Elias) -->
+    <section class="section avatars-section">
+        <h2 class="section-title">✨ The Dynamic Duo</h2>
+        <p class="section-subtitle">Gregory & Elias: Partners in Crime Solving</p>
+
+        <div class="avatars-grid">
+            <div class="avatar-card">
+                <div class="duo-image">
+                    <img src="avatars/greg_elias_detectives.png" alt="Detective Partners">
+                </div>
+                <h3>Junior Detectives</h3>
+                <p>Searching for clues (and snacks) together</p>
+            </div>
+            <div class="avatar-card">
+                <div class="duo-image">
+                    <img src="avatars/greg_elias_superheroes.png" alt="Superheroes">
+                </div>
+                <h3>Super Bros</h3>
+                <p>Defenders of the backyard</p>
+            </div>
+            <div class="avatar-card">
+                <div class="duo-image">
+                    <img src="avatars/greg_elias_bestfriends.png" alt="Best Friends">
+                </div>
+                <h3>Best Friends Forever</h3>
+                <p>A bond that can't be broken</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Slideshow Section -->
+    <section class="section highlights-section">
+        <h2 class="section-title">🎥 Detective Gregory: The Movie</h2>
+        <p class="section-subtitle">"The Case of the Missing Squeaky Toy"</p>
+
+        <div class="video-container">
+            <div class="video-wrapper"
+                style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                <video controls autoplay muted loop
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    <source src="gregory_mystery.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <p class="section-subtitle" style="margin-bottom: 0;">🎬 Featuring: Gregory as "The
+                    Detective"</p>
+                <small>Generated with AI</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Leaderboard -->
+    <section class="section leaderboard-section">
+        <h2 class="section-title">🏆 Photo Leaderboard</h2>
+        <p class="section-subtitle">Who's capturing Gregory the most this week?</p>
+
+        <div class="leaderboard">
+            <div class="leaderboard-item gold">
+                <span class="rank">🥇</span>
+                <span class="name">Mom</span>
+                <span class="count">47 photos</span>
+            </div>
+            <div class="leaderboard-item silver">
+                <span class="rank">🥈</span>
+                <span class="name">Dad</span>
+                <span class="count">23 photos</span>
+            </div>
+            <div class="leaderboard-item bronze">
+                <span class="rank">🥉</span>
+                <span class="name">The Kids</span>
+                <span class="count">12 photos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Install App CTA -->
+    <section class="section install-section">
+        <div class="install-card">
+            <h2>📲 Add to Home Screen</h2>
+            <p>Get the full Detective Gregory experience! Access anytime with one tap.</p>
+            <div class="install-instructions">
+                <div class="instruction">
+                    <span class="device">iPhone</span>
+                    <span class="steps">Safari → Share → Add to Home Screen</span>
+                </div>
+                <div class="instruction">
+                    <span class="device">Android</span>
+                    <span class="steps">Chrome → ⋮ → Install App</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for Detective Gregory</p>
+        <p class="footer-small">© 2026 The Gregory App • A Family Production</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
